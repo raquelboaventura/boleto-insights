@@ -1,6 +1,6 @@
-O valor total da fatura é 2706
-
-.Ao aplicar o metodo description() nos dados do boleto, obtemos: 
+O nome da pessoa: Raquel
+Valor da renda mensal: 3000.0
+scription() nos dados do boleto, obtemos: 
 count     99.000000
 mean      27.332121
 std       31.189968

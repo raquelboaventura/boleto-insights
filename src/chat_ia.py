@@ -1,3 +1,4 @@
+import logging
 import os
 
 import google.generativeai as genai
@@ -58,10 +59,15 @@ convo.send_message(
 def chat():
     nome = str(input("Qual é o seu nome?\n"))
     renda_mensal = float(input("Qual é a sua renda mensal?\n"))
-    with open("../output/insights.txt", 'r+') as f:
-        f.write(f"O nome da pessoa: {nome}\n")
-        f.write(f"Valor da renda mensal: {renda_mensal}\n")
-        details = f.read()
-        historico = convo.send_message(details)
-        historico_df = pd.DataFrame(historico)
-        historico_df.to_csv(f"../output/historico-{datetime.datetime.now().date()}.txt", index=False)
+    try:
+        with open("../output/insights.txt", 'r+') as f:
+            f.write(f"O nome da pessoa: {nome}\n")
+            f.write(f"Valor da renda mensal: {renda_mensal}\n")
+            details = f.read()
+            historico = convo.send_message(details)
+            historico_df = pd.DataFrame(historico)
+            historico_df.to_csv(f"../output/historico-{datetime.datetime.now().date()}.txt", index=False)
+    except FileNotFoundError:
+        logging.error("Arquivo insights.txt não encontrado")
+    except Exception as e:
+        logging.error(e)
