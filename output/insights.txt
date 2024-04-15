@@ -1,0 +1,97 @@
+O valor total da fatura é 2706
+
+.Ao aplicar o metodo description() nos dados do boleto, obtemos: 
+count     99.000000
+mean      27.332121
+std       31.189968
+min        0.490000
+25%       11.850000
+50%       17.600000
+75%       30.715000
+max      176.000000
+Name: 3, dtype: float64
+
+Agrupando por coluna 2 (descricao dos gastos), temos: 
+
+Data                  Valor
+-------------------  -----
+99* Pop 01jan 22h01min   12.8
+99* Pop 03dez 22h25min   24.4
+99* Pop 04dez 19h06min   14.9
+99* Pop 06dez 12h45min   11.8
+99* Pop 07dez 18h54min   13.1
+99* Pop 12dez 07h33min   15.8
+99* Pop 16dez 21h19min   13.8
+99* Pop 20dez 15h41min   17.6
+99* Pop 21dez 13h23min   12.1
+99* Pop 23dez 18h42min   17.7
+99* Pop 27dez 00h38min   24.5
+All Day Lanches          22.9
+America                  241.0
+Assb Comercio Varejist   33.0
+Au Au Cachorro Quent     12.0
+B F Panificacao          21.8
+Bahamas Mix              19.6
+Casa Madalena            21.0
+Claro Pgto Fatu Mensal   51.5
+Ctetuberlandia           50.0
+Dayanna Lorrainy Rodrigues Barbosa
+Total a pagar: R$ 10,81 (valor original de R$ 9,70 + R$ 0,07 de IOF +
+R$ 1,04 de juros).  10.8
+Deboche Pub Show         56.0
+Distribuidora do Naim    9.0
+Dm *Eneba                9.4
+Dm*Spotify               11.9
+Dm*Udemy                 22.9
+Drogasil                 15.9
+Dville Santa Monica      34.7
+Emporio Andrade          57.1
+Eneba.Com
+USD 1,80
+Conversão: USD 1 = R$ 5,11  9.2
+Fj Comercio Alimentici   12.0
+Flex Conveniencia        13.0
+Frutos do Cerrado        43.9
+Gabriela Santos de Andrade
+Total a pagar: R$ 12,48 (valor original de R$ 11,21 + R$ 0,07 de IOF +
+R$ 1,21 de juros).  12.5
+IOF de "Eneba.Com"       0.5
+IOF de rotativo          10.0
+Ifd*Mateus Vieira Polv   34.0
+Ifd*Michele Maria Urba   50.0
+Ifd*Rt Doceria Eireli    35.9
+Ifd*Thiago Abalem Tron   72.7
+Ifood *Clube *Ifood      5.0
+Imaginarium - 1/2        60.0
+Jr Comercio de Produto   29.5
+Juros de rotativo        25.7
+Leticia Ribeiro Arcos
+Total a pagar: R$ 4,46 (valor original de R$ 4,00 + R$ 0,03 de IOF +
+R$ 0,43 de juros).  4.5
+Milk Shake Mix           19.0
+Mukiffu'S Bar            16.0
+Pag*Playstorecell        35.0
+Pag*Zig                  14.0
+Pag*Zigtickets           44.0
+Pague Menos              113.0
+Parcelamento de Fatura - 2/3
+Total a pagar: R$ 390,37 (valor original de R$ 302,11 + R$ 2,70 de IOF
++ R$ 85,57 de juros) divididos em 3 parcelas de R$ 130,13.  130.1
+Parcelamento de Fatura - 3/3
+Total a pagar: R$ 487,30 (valor original de R$ 391,02 + R$ 3,30 de
+IOF + R$ 92,98 de juros) divididos em 3 parcelas de R$ 162,43.  162.4
+Pg *Ton Emporio Beer     15.5
+Picante                  8.4
+Posto Everest            16.8
+Pp *Ingressos - 3/7      51.0
+SECRET. FAZENDA MG 0213
+Total a pagar: R$ 143,60 (valor original de R$ 120,89 + R$ 1,10 de IOF
++ R$ 21,62 de juros).  143.6
+Sorte Grande             5.2
+Sousa Andrade Dist       8.0
+Supermercado Mega Mix    23.6
+Uber *Uber *Trip         545.7
+Vinil Cultura Bar I      40.0
+Zp *Sympla 6la6sr        17.5
+
+
