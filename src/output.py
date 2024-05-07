@@ -6,6 +6,7 @@ from src.pdf import criar_dataframe
 
 
 def criar_arquivo_insights(soma, descricao, groupby):
+    logging.log(logging.INFO, "Gerando arquivo insights...")
     try:
         with open("../output/insights.txt", 'w') as f:
             f.write(f"O valor total da fatura é {soma}\n\n.")
@@ -18,19 +19,20 @@ def criar_arquivo_insights(soma, descricao, groupby):
             f.write("\n\n")
             logging.info("Arquivo insights criado com sucesso. Verifique o caminho: ../output/insights.txt")
     except Exception as e:
-        logging.error(f"Ocorreu um erro ao gerar o arquivo: {e.with_traceback()}")
+        logging.error(f"Ocorreu um erro ao gerar o arquivo: {e}")
+
 
 def gerar_insights():
     criar_dataframe()
     try:
         with open("../output/arquivo_final.xlsx", 'rb') as f:
             df = pandas.read_excel(f)
-            COLUNA_VALORES = df.iloc[:, 4]
+            COLUNA_VALORES = df.iloc[:, 3]
             soma_valores = round(COLUNA_VALORES.sum())
             descricao_boleto = COLUNA_VALORES.describe()
-            resultado_groupby = df.groupby(2)[3].sum().reset_index()
+            resultado_groupby = df.groupby(df.columns[2])[df.columns[3]].sum().reset_index()
             resultado_groupby.columns = ['Data', 'Valor']
             criar_arquivo_insights(soma_valores,descricao_boleto, resultado_groupby)
             chat()
     except Exception as e:
-        logging.error(f"Ocorreu um erro ao gerar o arquivo: {e.with_traceback()}")
+        logging.error(f"Em método gerar insights: Ocorreu um erro ao gerar o arquivo: {e}")

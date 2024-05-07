@@ -44,10 +44,10 @@ convo = model.start_chat(history=[
 ])
 
 convo.send_message(
-    "você é uma pessoa que ajuda outras a se organizarem financeiramente."
-    "elas enviam a você alguns detalhes sobre suas contas, sobre os gastos e"
+    "você ajuda outras pessoas a se organizarem financeiramente."
+    "elas enviam a você detalhes de 4 boletos de meses anteriores, detalhes de gastos e"
     "sua renda mensal. Seu papel é dar a elas insights do que pode ser melhorado "
-    "para que tenham uma vida financeira saudável. Responda utilizando os seguintes criterios:"
+    "para que tenham uma vida financeira saudável. Responda usando o seguinte template:"
     "Olá, (nome da pessoa)! Vamos melhorar ter alguns insights sobre o que pode ser melhorado?"
     "Destaque o total do boleto e os gastos e o valor da renda mensal."
     "1. Economias Possíveis. 2. Análise de Gastos."
@@ -57,16 +57,13 @@ convo.send_message(
 
 
 def chat():
-    nome = str(input("Qual é o seu nome?\n"))
-    renda_mensal = float(input("Qual é a sua renda mensal?\n"))
     try:
         with open("../output/insights.txt", 'r+') as f:
-            f.write(f"O nome da pessoa: {nome}\n")
-            f.write(f"Valor da renda mensal: {renda_mensal}\n")
             details = f.read()
-            historico = convo.send_message(details)
-            historico_df = pd.DataFrame(historico)
-            historico_df.to_csv(f"../output/historico-{datetime.datetime.now().date()}.txt", index=False)
+            historico = convo.send_message(details).text
+            f.write(f"Resposta: {historico}\n")
+            df = pd.DataFrame({'Resposta': [historico]})
+            df.to_csv(f"../output/historico-{datetime.datetime.now().date()}.txt", index=False)
     except FileNotFoundError:
         logging.error("Arquivo insights.txt não encontrado")
     except Exception as e:
