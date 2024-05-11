@@ -17,18 +17,21 @@ def remover_saldo(dataframe):
 
 def criar_tabelas():
     dfs = []  # Lista para armazenar os DataFrames encontrados
-    for docs in os.listdir('../resources/pdf'):
-        doc = fitz.open('../resources/pdf/' + docs)
+    for docs in os.listdir('../../resources/pdf'):
+        doc = fitz.open('../../resources/pdf/' + docs)
         for page in doc:
             tabs = page.find_tables()
             if tabs.tables:
                 tabela = tabs[0].extract()
                 df = pd.DataFrame(tabela)
                 dfs.append(df)  # Adiciona o DataFrame à lista
+    print(pd.concat(dfs, ignore_index=True))
     return pd.concat(dfs, ignore_index=True)  # Concatena todos os DataFrames encontrados
 
 def criar_dataframe():
-    writer = pd.ExcelWriter(r"../output/arquivo_final.xlsx", engine='xlsxwriter')
+    if not os.path.exists("../../output"):
+        os.makedirs("../../output")
+    writer = pd.ExcelWriter("../../output/arquivo_final.xlsx", engine='xlsxwriter')
     try:
         df_tabelas = criar_tabelas()
         df_tabelas = transforma_em_float(df_tabelas.values.tolist())  # Transforma em float

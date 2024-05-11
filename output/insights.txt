@@ -1,6 +1,6 @@
-O nome da pessoa: raquel
-Valor da renda mensal: 3400.0
-escription() nos dados do boleto, obtemos: 
+O valor total da fatura é 22262
+
+.Ao aplicar o metodo description() nos dados do boleto, obtemos: 
 count     383.000000
 mean       58.124569
 std       227.859779
@@ -11,315 +11,426 @@ min         0.010000
 max      2435.200000
 Name: 3, dtype: float64
 
-Agrupando por coluna 2 (descricao dos gastos), temos: 
+Agrupando pela descricao dos gastos, temos: 
 
 Data                  Valor
 -------------------  -----
-1209drogasil             19.9
-2544drogasil             22.5
-47286882 Valderio Guid   219.6
-99* Pop 01jan 22h01min   12.8
-99* Pop 02fev 15h18min   12.8
-99* Pop 02fev 21h43min   8.7
-99* Pop 03dez 22h25min   24.4
-99* Pop 03fev 02h21min   12.8
-99* Pop 03fev 11h03min   6.6
-99* Pop 03jan 13h07min   10.7
-99* Pop 04dez 19h06min   14.9
-99* Pop 05fev 07h45min   17.7
-99* Pop 05fev 20h09min   13.6
-99* Pop 06dez 12h45min   11.8
-99* Pop 06fev 15h35min   12.5
-99* Pop 07dez 18h54min   13.1
-99* Pop 08fev 11h40min   12.7
-99* Pop 08fev 16h57min   12.9
-99* Pop 09mar 19h46min   10.4
-99* Pop 10jan 00h30min   14.2
-99* Pop 10jan 18h17min   12.6
-99* Pop 12dez 07h33min   15.8
-99* Pop 12jan 13h12min   14.3
-99* Pop 12jan 23h21min   12.5
-99* Pop 12mar 16h13min   14.4
-99* Pop 14jan 23h02min   16.5
-99* Pop 15fev 09h20min   15.5
-99* Pop 15fev 11h47min   11.9
-99* Pop 15fev 20h33min   19.9
-99* Pop 16dez 21h19min   13.8
-99* Pop 16fev 15h12min   9.4
-99* Pop 16jan 09h58min   11.9
-99* Pop 16jan 10h35min   11.0
-99* Pop 16jan 16h14min   14.1
-99* Pop 16jan 21h47min   11.7
-99* Pop 17jan 09h57min   7.3
-99* Pop 17jan 10h49min   6.6
-99* Pop 17mar 02h32min   15.2
-99* Pop 18fev 14h58min   6.6
-99* Pop 20dez 15h41min   17.6
-99* Pop 20jan 22h09min   19.7
-99* Pop 21dez 13h23min   12.1
-99* Pop 21jan 19h46min   12.0
-99* Pop 21jan 21h48min   11.9
-99* Pop 21mar 23h50min   19.2
-99* Pop 23dez 18h42min   17.7
-99* Pop 23mar 10h40min   16.0
-99* Pop 23mar 13h41min   17.5
-99* Pop 24mar 03h40min   22.4
-99* Pop 24mar 11h58min   15.1
-99* Pop 25jan 14h41min   12.8
-99* Pop 25jan 22h47min   10.4
-99* Pop 26jan 13h26min   14.9
-99* Pop 26mar 18h57min   16.3
-99* Pop 27dez 00h38min   24.5
-99* Pop 27jan 14h58min   16.9
-99* Pop 27jan 18h24min   18.4
-99* Pop 27mar 23h17min   23.0
-99* Pop 31jan 15h48min   11.8
-99* Pop 31jan 17h35min   14.4
-99app *99app             305.2
-All Day Lanches          22.9
-Aluguel - 1/3            99.2
-Aluguel - 2/3            99.2
-Amarena Sorvetes         32.7
-America                  241.0
-Antecipada - Parcelamento de Fatura - 3/3
-Total a pagar: R$ 390,37 (valor original de R$ 302,11 + R$ 2,70 de IOF
-+ R$ 85,57 de juros) divididos em 3 parcelas de R$ 130,13.  130.1
-Antecipada - Renegociação de pendências - 2/2
-Total a pagar: R$ 1.735,74 (valor original de R$ 1.492,92 + R$ 10,64 de
-IOF + R$ 232,18 de juros) divididos em 2 parcelas de R$ 867,87.  867.9
-Apollo Onze              27.0
-Arquibancada             28.0
-Arts Servicos            55.0
-Assb Comercio Varejist   77.8
-Au Au Cachorro Quent     56.0
-B F Panificacao          21.8
-Bahamas Mix              33.6
-Bobs - Patio Uberlandi   24.0
-Boca Comercio de Alime   19.8
-Braseiro Grill           80.0
-Burger Club              46.9
-Burger King App          182.5
-Buteco da Esquina        116.2
-Cafe Imperial            42.0
-Caldo e Wok              49.9
-Cantoa Espaco Gourmet    38.2
-Cappta *Street Case - 2/2  60.0
-Carlos Livius da Silva
-Total a pagar: R$ 26,28 (valor original de R$ 25,00 + R$ 0,14 de IOF +
-R$ 1,15 de juros).  26.3
-Casa Madalena            21.0
-Claro Pgto Fatu Mensal   154.5
-Credpag*Mercado do Jap   34.0
-Crédito de atraso        2435.2
-Crédito de parcelamento  2864.2
-Crédito de rotativo      1565.3
-Ctetuberlandia           50.0
-Dayanna Lorrainy Rodrigues Barbosa
-Total a pagar: R$ 10,81 (valor original de R$ 9,70 + R$ 0,07 de IOF +
-R$ 1,04 de juros).  10.8
-Deboche Pub Show         96.0
-Desconto de antecipação  95.3
-Distribuidora do Naim    20.2
-Divino Pao               89.6
-Dm *Eneba                9.4
-Dm *Spotify              35.7
-Dm*Riot                  74.9
-Dm*Spotify               11.9
-Dm*Udemy                 22.9
-Drive Rondon Pacheco     33.3
-Drogaria Atalaia         3.0
-Drogarias Pacheco        86.6
-Drogasil                 15.9
-Drunks Pub               20.0
-Dville Santa Monica      34.7
-Elephant Entreteniment   10.0
-Emporio Andrade          57.1
-Emporio da Fazenda       18.0
-Encerramento de dívida   201.3
-Eneba.Com
-USD 1,80
-Conversão: USD 1 = R$ 5,11  9.2
-Espirito Santo Lanchon   9.0
-Estancia Gaucha          16.0
-Euripedes                20.0
-Fj Comercio Alimentici   34.0
-Flex Conveniencia        26.0
-Floriano Peixoto         31.8
-Frutos do Cerrado        43.9
-Gabriela Santos de Andrade
-Total a pagar: R$ 10,82 (valor original de R$ 10,00 + R$ 0,06 de IOF +
-R$ 0,77 de juros).  10.8
-Gabriela Santos de Andrade
-Total a pagar: R$ 12,48 (valor original de R$ 11,21 + R$ 0,07 de IOF +
-R$ 1,21 de juros).  12.5
-Gramado Paes e Doces     62.6
-Guilherme                13.5
-Hdpasteis                47.5
-Hna*Qdberenice           52.9
-Hollywood Digital        77.0
-IOF de "Eneba.Com"       0.5
-IOF de "Steam Purchase"  2.7
-IOF de atraso            10.0
-IOF de atraso de parcelamento de fatura  0.0
-IOF de rotativo          10.0
-Iaca Comercio Industri   49.9
-Ifd*Borda e Lenha Uber   79.9
-Ifd*Flmv Comercio de B   69.0
-Ifd*Hela Comercio de A   58.9
-Ifd*Ifood.Com Agencia    9.9
-Ifd*Mateus Vieira Polv   34.0
-Ifd*Michele Maria Urba   50.0
-Ifd*Minas Goias Comerc   71.0
-Ifd*Rt Doceria Eireli    35.9
-Ifd*Thiago Abalem Tron   72.7
-Ifd*Uai Groove Hamburg   35.0
-Ifood *Clube *Ifood      9.9
-Ifood *Ifd*Uai Groov     48.8
-Imaginarium - 1/2        60.0
-Imaginarium - 2/2        60.0
-Ingresso.Com             70.0
-Inovar Cosmeticos - 1/3  52.9
-Inovar Cosmeticos - 2/3  52.8
-Jr Comercio de Produto   29.5
-Juquinha Lanches         28.0
-Juros de atraso          47.5
-Juros de atraso de parcelamento de fatura  1.3
-Juros de rotativo        25.7
-Kamel Mega Mix F4        3.0
-Leticia Ribeiro Arcos
-Total a pagar: R$ 4,46 (valor original de R$ 4,00 + R$ 0,03 de IOF +
-R$ 0,43 de juros).  4.5
-Lojas Americanas         36.0
-Lol Restaurante          22.5
-Mano'S Espetaria         18.5
-Meep Pa*Musica Importa   20.0
-Mega Util                4.5
-Milk Shake Mix           19.0
-Minas Tche               80.0
-Minimercado Aguiar       9.0
-Mm Comercio de Aliment   10.5
-Mrk Medicamentos         30.9
-Mukiffu'S Bar            30.5
-Multa de atraso          50.6
-Multa de atraso de parcelamento de fatura  5.8
-Nosso Ponto              45.0
-Pag*Biaspasteis          10.0
-Pag*Casadecarnesbrasa    64.6
-Pag*Casatres             20.0
-Pag*Danielhenriquedef    14.0
-Pag*Drogalider           19.4
-Pag*Elisangeladornela    20.0
-Pag*Fabianmarcio         75.0
-Pag*Justbreja            10.0
-Pag*Larepublicapub       38.0
-Pag*Lojasrennersa - 1/3  103.2
-Pag*Lojasrennersa - 2/3  103.2
-Pag*Lojasrennersa - 3/3  103.2
-Pag*Lorrayneestefany     11.3
-Pag*Onlineecommerce - 1/3  135.7
-Pag*Petz - 1/2           97.3
-Pag*Petz - 2/2           97.3
-Pag*Picanteselfservic    36.9
-Pag*Playstorecell        35.0
-Pag*Prontosocorroda      21.0
-Pag*Rafaelbentoalves - 1/4  59.5
-Pag*Rafaelbentoalves - 2/4  59.5
-Pag*Washingtoncardoso    51.0
-Pag*Zig                  14.0
-Pag*Zigtickets           44.0
-Pague Menos              113.0
-Parcelamento de Fatura - 2/3
-Total a pagar: R$ 390,37 (valor original de R$ 302,11 + R$ 2,70 de IOF
-+ R$ 85,57 de juros) divididos em 3 parcelas de R$ 130,13.  130.1
-Parcelamento de Fatura - 3/3
-Total a pagar: R$ 487,30 (valor original de R$ 391,02 + R$ 3,30 de
-IOF + R$ 92,98 de juros) divididos em 3 parcelas de R$ 162,43.  162.4
-Pg *Ton Emporio Beer     15.5
-Pg *Ton Paula Alvare     30.0
-Picante                  8.4
-Piter Pao                9.5
-Posto Everest            16.8
-Poupee Acessorios        24.0
-Pp *Ingressos - 3/7      51.0
-Pp *Ingressos - 4/7      51.0
-Pp *Ingressos - 5/7      51.0
-Pp *Ingressos - 6/7      51.0
-Ppro *Microsoft          110.0
-Recarga de celular       20.0
-Renegociação de pendências - 1/2
-Total a pagar: R$ 1.735,74 (valor original de R$ 1.492,92 + R$ 10,64 de
-IOF + R$ 232,18 de juros) divididos em 2 parcelas de R$ 867,87.  867.9
-Renegociação de pendências - 1/3
-Total a pagar: R$ 1.713,86 (valor original de R$ 1.381,99 + R$ 11,99 de
-IOF + R$ 319,88 de juros) divididos em 3 parcelas de R$ 571,29.  571.3
-Renegociação de pendências - 2/3
-Total a pagar: R$ 1.713,86 (valor original de R$ 1.381,99 + R$ 11,99 de
-IOF + R$ 319,88 de juros) divididos em 3 parcelas de R$ 571,29.  571.3
-SECRET. FAZENDA MG 0213
-Total a pagar: R$ 143,60 (valor original de R$ 120,89 + R$ 1,10 de IOF
-+ R$ 21,62 de juros).  143.6
-Sabor Mineiro            10.0
-Saldo em atraso          2435.2
-Sense Medicina e Diagn - 1/2  60.0
-Sermed Servicos Medic    80.0
-Sho*Bruartimportado      22.0
-Sorte Grande             5.2
-Sousa Andrade Dist       8.0
-Steam Purchase
-BRL 59,99 = USD 12,17
-Conversão: BRL 4,93 = USD 1 = R$ 5,12  62.3
-Super Abc Montandon      11.5
-Supermercado Bahamas S   44.4
-Supermercado Mega Mix    23.6
-Supermercados Leal       41.5
-Textil Abril Filial - 1/2  45.0
-Uber *Uber *Trip         990.9
-Uva Caju                 25.9
-Viaje Bar                142.0
-Vinil Cultura Bar I      40.0
-Vp Joias Acessorios - 1/2  60.0
-Zp *Sympla 6la6sr        17.5
-la Biblioteca            39.0
+04 DEZ                   nan
+04 DEZ                   nan
+04 DEZ                   nan
+04 DEZ                   nan
+04 DEZ                   nan
+04 DEZ                   nan
+04 DEZ                   nan
+04 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+05 DEZ                   nan
+06 DEZ                   nan
+06 DEZ                   nan
+06 DEZ                   nan
+07 DEZ                   nan
+07 DEZ                   nan
+07 DEZ                   nan
+07 DEZ                   nan
+08 DEZ                   nan
+08 DEZ                   nan
+08 DEZ                   nan
+nan                      nan
+08 DEZ                   nan
+08 DEZ                   nan
+08 DEZ                   nan
+08 DEZ                   nan
+08 DEZ                   nan
+09 DEZ                   nan
+09 DEZ                   nan
+09 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+10 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+11 DEZ                   nan
+12 DEZ                   nan
+12 DEZ                   nan
+13 DEZ                   nan
+14 DEZ                   nan
+15 DEZ                   nan
+15 DEZ                   nan
+16 DEZ                   nan
+16 DEZ                   nan
+17 DEZ                   nan
+17 DEZ                   nan
+17 DEZ                   nan
+17 DEZ                   nan
+17 DEZ                   nan
+18 DEZ                   nan
+18 DEZ                   nan
+18 DEZ                   nan
+18 DEZ                   nan
+19 DEZ                   nan
+19 DEZ                   nan
+19 DEZ                   nan
+21 DEZ                   nan
+21 DEZ                   nan
+21 DEZ                   nan
+21 DEZ                   nan
+21 DEZ                   nan
+22 DEZ                   nan
+22 DEZ                   nan
+23 DEZ                   nan
+nan                      nan
+23 DEZ                   nan
+23 DEZ                   nan
+24 DEZ                   nan
+24 DEZ                   nan
+24 DEZ                   nan
+24 DEZ                   nan
+24 DEZ                   nan
+25 DEZ                   nan
+26 DEZ                   nan
+28 DEZ                   nan
+28 DEZ                   nan
+29 DEZ                   nan
+30 DEZ                   nan
+30 DEZ                   nan
+30 DEZ                   nan
+30 DEZ                   nan
+31 DEZ                   nan
+31 DEZ                   nan
+01 JAN                   nan
+01 JAN                   nan
+01 JAN                   nan
+01 JAN                   nan
+01 JAN                   nan
+01 JAN                   nan
+02 JAN                   nan
+02 JAN                   nan
+02 JAN                   nan
+03 JAN                   nan
+03 JAN                   nan
+04 JAN                   nan
+04 JAN                   nan
+04 JAN                   nan
+05 JAN                   nan
+06 JAN                   nan
+06 JAN                   nan
+06 JAN                   nan
+06 JAN                   nan
+07 JAN                   nan
+08 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+09 JAN                   nan
+10 JAN                   nan
+10 JAN                   nan
+10 JAN                   nan
+10 JAN                   nan
+10 JAN                   nan
+10 JAN                   nan
+11 JAN                   nan
+11 JAN                   nan
+11 JAN                   nan
+11 JAN                   nan
+11 JAN                   nan
+nan                      nan
+11 JAN                   nan
+11 JAN                   nan
+11 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+12 JAN                   nan
+13 JAN                   nan
+13 JAN                   nan
+13 JAN                   nan
+14 JAN                   nan
+14 JAN                   nan
+14 JAN                   nan
+14 JAN                   nan
+nan                      nan
+14 JAN                   nan
+14 JAN                   nan
+15 JAN                   nan
+15 JAN                   nan
+15 JAN                   nan
+15 JAN                   nan
+16 JAN                   nan
+16 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+17 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+18 JAN                   nan
+nan                      nan
+19 JAN                   nan
+20 JAN                   nan
+20 JAN                   nan
+21 JAN                   nan
+22 JAN                   nan
+22 JAN                   nan
+23 JAN                   nan
+23 JAN                   nan
+23 JAN                   nan
+24 JAN                   nan
+24 JAN                   nan
+24 JAN                   nan
+24 JAN                   nan
+24 JAN                   nan
+25 JAN                   nan
+26 JAN                   nan
+26 JAN                   nan
+27 JAN                   nan
+27 JAN                   nan
+27 JAN                   nan
+28 JAN                   nan
+29 JAN                   nan
+29 JAN                   nan
+01 FEV                   nan
+01 FEV                   nan
+01 FEV                   nan
+03 FEV                   nan
+03 FEV                   nan
+03 FEV                   nan
+03 FEV                   nan
+04 FEV                   nan
+04 FEV                   nan
+04 FEV                   nan
+04 FEV                   nan
+04 FEV                   nan
+04 FEV                   nan
+04 FEV                   nan
+05 FEV                   nan
+05 FEV                   nan
+05 FEV                   nan
+06 FEV                   nan
+06 FEV                   nan
+07 FEV                   nan
+07 FEV                   nan
+07 FEV                   nan
+07 FEV                   nan
+07 FEV                   nan
+08 FEV                   nan
+08 FEV                   nan
+08 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+09 FEV                   nan
+10 FEV                   nan
+11 FEV                   nan
+11 FEV                   nan
+11 FEV                   nan
+11 FEV                   nan
+11 FEV                   nan
+13 FEV                   nan
+14 FEV                   nan
+14 FEV                   nan
+14 FEV                   nan
+14 FEV                   nan
+14 FEV                   nan
+14 FEV                   nan
+15 FEV                   nan
+15 FEV                   nan
+15 FEV                   nan
+15 FEV                   nan
+15 FEV                   nan
+16 FEV                   nan
+16 FEV                   nan
+16 FEV                   nan
+16 FEV                   nan
+16 FEV                   nan
+17 FEV                   nan
+17 FEV                   nan
+17 FEV                   nan
+18 FEV                   nan
+18 FEV                   nan
+18 FEV                   nan
+19 FEV                   nan
+nan                      nan
+19 FEV                   nan
+19 FEV                   nan
+19 FEV                   nan
+19 FEV                   nan
+19 FEV                   nan
+20 FEV                   nan
+21 FEV                   nan
+21 FEV                   nan
+21 FEV                   nan
+21 FEV                   nan
+22 FEV                   nan
+22 FEV                   nan
+23 FEV                   nan
+24 FEV                   nan
+25 FEV                   nan
+25 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+26 FEV                   nan
+04 MAR                   nan
+04 MAR                   nan
+04 MAR                   nan
+04 MAR                   nan
+04 MAR                   nan
+04 MAR                   nan
+04 MAR                   nan
+08 MAR                   nan
+09 MAR                   nan
+09 MAR                   nan
+09 MAR                   nan
+10 MAR                   nan
+10 MAR                   nan
+10 MAR                   nan
+10 MAR                   nan
+11 MAR                   nan
+11 MAR                   nan
+11 MAR                   nan
+12 MAR                   nan
+12 MAR                   nan
+12 MAR                   nan
+13 MAR                   nan
+13 MAR                   nan
+13 MAR                   nan
+14 MAR                   nan
+14 MAR                   nan
+14 MAR                   nan
+14 MAR                   nan
+nan                      nan
+14 MAR                   nan
+15 MAR                   nan
+15 MAR                   nan
+16 MAR                   nan
+16 MAR                   nan
+16 MAR                   nan
+16 MAR                   nan
+16 MAR                   nan
+16 MAR                   nan
+16 MAR                   nan
+17 MAR                   nan
+17 MAR                   nan
+17 MAR                   nan
+18 MAR                   nan
+18 MAR                   nan
+18 MAR                   nan
+18 MAR                   nan
+18 MAR                   nan
+18 MAR                   nan
+19 MAR                   nan
+20 MAR                   nan
+21 MAR                   nan
+21 MAR                   nan
+22 MAR                   nan
+22 MAR                   nan
+23 MAR                   nan
+23 MAR                   nan
+24 MAR                   nan
+24 MAR                   nan
+24 MAR                   nan
+24 MAR                   nan
+24 MAR                   nan
+24 MAR                   nan
+24 MAR                   nan
+25 MAR                   nan
+25 MAR                   nan
+25 MAR                   nan
+25 MAR                   nan
+25 MAR                   nan
+25 MAR                   nan
+26 MAR                   nan
+26 MAR                   nan
+26 MAR                   nan
+27 MAR                   nan
+27 MAR                   nan
+27 MAR                   nan
+28 MAR                   nan
+28 MAR                   nan
+28 MAR                   nan
+28 MAR                   nan
+28 MAR                   nan
+29 MAR                   nan
+31 MAR                   nan
+01 ABR                   nan
+01 ABR                   nan
+03 ABR                   nan
+03 ABR                   nan
+03 ABR                   nan
 
 
-Resposta: **Olhando mais de perto seu fluxo de caixa, aqui estão alguns insights que podem ajudá-lo a melhorar sua vida financeira:**
+Resposta: **Destaque do Boleto e Gastos**
 
-**1. Economias Possíveis**
+**Total do Boleto:** R$ 22.262,00
 
-* Com um gasto médio de R$ 12,80 em compras do **99pop**, você poderia economizar cerca de R$ 153,60 por ano optando por alternativas mais econômicas de transporte.
+**Gastos:**
 
-* Seu gasto médio de R$ 35 em refeições no **Burger King App** é significativamente maior do que outras opções de refeições. Considerar cozinhar mais refeições em casa ou procurar opções mais baratas pode economizar cerca de R$ 420 por ano.
+* Os dados fornecidos não contêm informações sobre gastos específicos.
 
-**2. Análise de Gastos**
+**Insights**
 
-* A categoria **Outros** representa a maior parcela (35%) do seu orçamento mensal. Uma análise mais detalhada desses gastos pode identificar áreas onde você pode economizar.
+* **Dados Insuficientes:** Os dados fornecidos não contêm informações suficientes para fornecer insights sobre gastos ou tendências.
 
-* Os gastos com **Entretenimento** também são significativos (15%). Explorar atividades gratuitas ou de baixo custo pode reduzir esses gastos.
+**Dicas Práticas**
 
-**3. Planejamento Financeiro**
+* Revise seus extratos bancários ou use aplicativos de rastreamento de gastos para obter uma visão mais detalhada de seus gastos.
+* Categorize seus gastos para identificar áreas onde você pode economizar.
+* Crie um orçamento para controlar seus gastos e evitar dívidas.
 
-* Criar um orçamento mensal detalhado o ajudará a rastrear seus gastos e identificar áreas onde você pode cortar.
+**Incentivo à Ação**
 
-* Acompanhe seus gastos por meio de aplicativos ou planilhas para obter uma melhor compreensão de seus hábitos financeiros.
+* Colete dados mais abrangentes sobre seus gastos para obter insights mais precisos.
+* Use as dicas práticas fornecidas para melhorar seus hábitos financeiros.
 
-**4. Controle de Despesas**
+**Recursos**
 
-* Considere usar dinheiro ou cartões pré-pagos para controlar seus gastos e evitar compras por impulso.
-
-* Negociar descontos em boletos e anuidades de cartões de crédito também pode reduzir as despesas fixas.
-
-**5. Priorização de Gastos**
-
-* Priorize seus gastos com base em necessidades (habitação, alimentação, transporte) e desejos (entretenimento, compras).
-
-* Considere reduzir gastos desnecessários para aumentar suas economias.
-
-**6. Planejamento de Objetivos**
-
-* Defina metas financeiras de curto e longo prazo, como comprar uma casa ou se aposentar confortavelmente.
-
-* Crie um plano para atingir essas metas economizando e investindo uma parte de sua renda.
-
-**Conclusão**
-
-Implementando essas medidas, você pode melhorar significativamente sua vida financeira. Lembre-se que economizar dinheiro é uma jornada, não um destino. Esteja paciente e disciplinado e você verá os resultados com o tempo.
+* [Como Controlar Gastos Pessoais](https://www.consumidor.gov.br/educacao-financeira/controle-financeiro-pessoal/)
+* [Aplicativos de Controle Financeiro](https://www.techtudo.com.br/listas/2020/03/aplicativos-de-controle-financeiro-para-voce-nao-gastar-mais-do-que-pode.ghtml)
