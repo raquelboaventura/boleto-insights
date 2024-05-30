@@ -2,6 +2,7 @@ from src.utilities.pdf import criar_tabelas
 from loguru import logger
 from quart import Quart, jsonify, request
 import asyncio
+import os
 import json
 from src.utilities.chat_ia import chat, markdown_para_texto
 
