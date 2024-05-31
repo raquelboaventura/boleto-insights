@@ -1,18 +1,16 @@
-from src.utilities.pdf import criar_tabelas
+from utilities.pdf import criar_tabelas
 from loguru import logger
-from quart import Quart, jsonify, request
-import asyncio
+from quart import Quart, jsonify, request, render_template
 import os
-import json
-from src.utilities.chat_ia import chat, markdown_para_texto
+from utilities.chat_ia import markdown_para_texto
 
 
 app = Quart(__name__)
 
 
 @app.route("/")
-def home():
-    return "Hello, World!"
+async def home():
+    return await render_template('index.html')
 
 
 @app.route("/insights", methods=["POST"])
@@ -45,7 +43,7 @@ async def upload_file():
     # Verifica se o arquivo é um PDF
     if file.filename.endswith('.pdf'):
         # Salva o arquivo no diretório desejado
-        await file.save(os.path.join('static/pdf', file.filename))
+        await file.save(os.path.join('..\src\input', file.filename))
         return jsonify({'message': 'Arquivo enviado com sucesso'}), 200
     else:
         return jsonify({'error': 'Arquivo enviado não é um PDF'}), 400

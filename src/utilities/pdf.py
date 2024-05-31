@@ -3,8 +3,8 @@ import os
 import fitz
 import pandas as pd
 
-from src.utilities.chat_ia import chat
-from src.utilities.configs import get_logger
+from utilities.chat_ia import chat
+from utilities.configs import get_logger
 
 logger = get_logger()
 
@@ -26,7 +26,7 @@ def exclui_strings(lista):
 
 
 async def criar_tabelas():
-    pdf_dir = os.path.abspath("static/pdf")
+    pdf_dir = os.path.abspath("..\src\input")
     logger.debug(f"Diretório PDF: {pdf_dir}")
 
     if not os.path.exists(pdf_dir):
@@ -58,7 +58,7 @@ async def criar_tabelas():
 
 async def processar_documento(doc):
     logger.info(f"Iniciando o processamento do documento: {doc}")
-    pdf_dir = os.path.abspath("static/pdf")
+    pdf_dir = os.path.abspath("..\src\input")
     doc_path = os.path.join(pdf_dir, doc)
     logger.debug(f"Tentando abrir o documento: {doc_path}")
 
