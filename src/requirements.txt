@@ -1,0 +1,9 @@
+auto_mix_prep==0.2.0
+beautifulsoup4==4.12.3
+fitz==0.0.1.dev2
+loguru==0.7.2
+mistune==3.0.2
+pandas==2.2.2
+protobuf==5.27.0
+python-dotenv==1.0.1
+quart==0.19.6
