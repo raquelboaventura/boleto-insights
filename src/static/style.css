@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -128,6 +129,8 @@ body{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     filter: blur(1.5px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     
     transform: translate(2px, 2px);
 }

@@ -30,7 +30,7 @@
                     <img id="p" src="./static/img/P.svg">
                 </div>
                 <div id="cta">
-                    <a href="#service">
+                    <a href="#box" id="startBtn">
                     <img src="./static/img/button.svg" alt=""> 
                     </a>
                 </div>
@@ -56,16 +56,17 @@
             <div id="left" class="side">
                 <div id="send">
                     <div id="input">
-                        <div id="box">
-                            <img src="./static/img/select.svg" alt="selecionar">
+                        <div id="box" class="uploadArea">
+                            <label id="selectBtn" for="fileInput"><img src="./static/img/select.svg" alt="selecionar"></label>
+                            <input type='file' style="display:none;" id="fileInput" name="fileInput" accept= ".pdf" multiple>
                         </div>
 
                         <div id="info">
                             <div id="btns">
-                                <img src="./static/img/send-btn.svg" alt="">
+                                <img id="sendBtn" src="./static/img/send-btn.svg" alt="">
 
                                 <label class="checkbox-container">
-                                    <input type="checkbox">
+                                    <input type="checkbox" name="checkbox" id=""checkbox"">
                                     <span class="checkmark"></span>
                                     Li e concordo com os <span class="terms">termos e condições</span>
                                 </label>
@@ -90,5 +91,6 @@ DADOS DOS USUÁRIOS</b>.
             </div>
         </div>
     </section>
+    <script src="../static/script.js"></script>
 </body>
 </html>
