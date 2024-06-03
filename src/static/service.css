@@ -198,6 +198,11 @@ body{
     text-decoration: underline; /* Sublinhado */
 }
 
+#terms-checkbox{
+    color:rgb(58, 1, 1);
+    background-color: #facdc9;
+}
+
 #service #content #left #send #input #info #disclaimer{
     height: 11.230vh;
     width: 16.111vw;
@@ -252,4 +257,31 @@ body{
     background-image: url("./img/response-content.svg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.hidden-loader{
+    display:none
+}
+
+.loader {
+    width: 1.5rem; /* Substitua $size/3 pelo valor desejado */
+    height: 1.5rem; /* Substitua $size/3 pelo valor desejado */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Alterado para 'fixed' */
+    top: 50%; /* Posiciona o elemento no meio verticalmente */
+    left: 50%; /* Posiciona o elemento no meio horizontalmente */
+    background: #FE7264; /* Substitua $brand pelo valor desejado */
+    color: #1F3A62; /* Substitua $lite pelo valor desejado */
+    box-shadow: -50px 0, 50px 0; /* Substitua $size/2 pelo valor desejado */
+    animation: rotation 2s ease-in-out infinite;
+    z-index: 9999; /* Garante que o elemento esteja na frente de todos os outros */
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
 }

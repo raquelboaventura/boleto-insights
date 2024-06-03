@@ -2,12 +2,23 @@ import asyncio
 import os
 import fitz
 import pandas as pd
+import glob
 
 from utilities.chat_ia import chat
 from utilities.configs import get_logger
 
 logger = get_logger()
 
+def directory_cleaner():
+      # Lista todos os arquivos no diretório
+    arquivos = glob.glob(os.path.abspath("..\src\input"))
+    # Remove cada arquivo
+    for arquivo in arquivos:
+        try:
+            os.remove(arquivo)
+            print(f'Arquivo {arquivo} removido com sucesso.')
+        except Exception as e:
+            print(f'Erro ao remover o arquivo {arquivo}: {e}')
 
 def transforma_em_float(dados):
     for i, linha in enumerate(dados):
@@ -85,9 +96,9 @@ async def processar_documento(doc):
             tabela = exclui_strings(tabela)
             df = pd.DataFrame(tabela)
             dfs.append(df)
-            chat(f"O detalhamento do boleto {doc_path}, pagina {page.number} de {len(doc)}, está a seguir: {df}")
             count += 1
         logger.info(f"Finalizando a página {page.number}")
+    chat(f"O detalhamento do boleto {doc_path}, pagina {page.number} de {len(doc)}, está a seguir: {df}")
     resposta_gemini = chat("Sumarize todas as informações e retorne os insights no template.")
     if resposta_gemini is not None:
         logger.info(f"Resposta do Gemini gerada com sucesso!")

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boleto Insights</title>
 
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="../static/service.css">
     
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,9 +67,10 @@
                                 <img id="sendBtn" src="./static/img/send-btn.svg" alt="">
 
                                 <label class="checkbox-container">
-                                    <input type="checkbox" name="checkbox" id=""checkbox"">
+                                    <input type="checkbox" name="checkbox" id="checkbox">
                                     <span class="checkmark"></span>
                                     Li e concordo com os <span class="terms">termos e condições</span>
+                                    <span id="terms-checkbox" class="hidden-loader">Por favor, aceite os termos e condições.</span>
                                 </label>
                             </div>
                             <div id="disclaimer">
@@ -84,9 +86,9 @@ DADOS DOS USUÁRIOS</b>.
             <div id="right" class="side">
                 <div id="response">
                     <div id="content">
-                        
                     </div>
-
+                </div>
+                <div id="loader" class="hidden-loader">
                 </div>
             </div>
         </div>
