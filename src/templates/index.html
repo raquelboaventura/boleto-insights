@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../static/service.css">
     
     <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico"> 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -86,6 +85,7 @@ DADOS DOS USUÁRIOS</b>.
             <div id="right" class="side">
                 <div id="response">
                     <div id="content">
+                        <p id="text"></p>
                     </div>
                 </div>
                 <div id="loader" class="hidden-loader">
@@ -93,6 +93,26 @@ DADOS DOS USUÁRIOS</b>.
             </div>
         </div>
     </section>
-    <script src="../static/script.js"></script>
+       <!-- Importando o script do Marked.js -->
+       <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+       <script>
+           // Função para formatar texto em Markdown para HTML
+           function formatMarkdownToHtml(markdownText) {
+               return marked(markdownText);
+           }
+   
+           // Selecionando o elemento que contém o texto em Markdown
+           let textContent = document.querySelector("#service #content #right #response #content #text");
+           let markdownText = textContent.textContent;
+   
+           // Convertendo o texto em Markdown para HTML
+           let htmlContent = formatMarkdownToHtml(markdownText);
+   
+           // Inserindo o conteúdo HTML no elemento
+           textContent.innerHTML = htmlContent;
+       </script>
+       
+       <script type="module" src="../static/script.js"></script>
 </body>
 </html>

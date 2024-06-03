@@ -1,4 +1,3 @@
-// Botões 
 let startBtn = document.querySelector("#startBtn")
 let sendBtn = document.querySelector("#sendBtn")
 let selectBtn = document.querySelector("#selectBtn")
@@ -32,10 +31,19 @@ function setupInsightsBtn() {
 
                 if (response.ok) {
                     console.log("Response gerada com sucesso.");
+                    let textContent = document.querySelector("#service #content #right #response #content #text");
+                    let responseBlock = document.querySelector("#service #content #right #response");
                     let responseContent = document.querySelector("#service #content #right #response #content");
                     if (responseContent) {
                         responseContent.style.backgroundImage = 'none';
                         responseContent.textContent = result.message;
+                        
+                        responseBlock.style.width = '90%';
+                        responseBlock.style.overflow = 'auto';
+                        
+                        textContent.style.display = 'flex';
+                        textContent.style.flexDirection = 'row';
+                        textContent.style.fontSize = '20px';
                     } else {
                         console.error('Elemento não encontrado!');
                     }
@@ -66,7 +74,6 @@ sendBtn.addEventListener('click', async () => {
     }
 
     selectedFiles = Array.from(uploadBtn.files);
-    uploadArea.innerHTML = "arquivo 1, arquivo 2 teste teste"
     // Verifica se nenhum arquivo foi selecionado
     if (selectedFiles.length === 0) {
         console.log("Nenhum arquivo selecionado!");
@@ -107,7 +114,32 @@ selectBtn.addEventListener('click', (e) => {
 
 // Evento para capturar a mudança no arquivo selecionado
 uploadBtn.addEventListener('change', async () => {
-    console.log("uploadBtn change event");
+    // Limpa a pré-visualização anterior
+    uploadArea.innerHTML = "";
+    
+    // Itera sobre os arquivos selecionados
+    for (const file of uploadBtn.files) {
+        // Verifica se o arquivo é um PDF
+        if (file.type === 'application/pdf') {
+            // Cria um contêiner para o arquivo
+            const fileContainer = document.createElement('div');
+            fileContainer.classList.add('file-container');
+            
+            // Adiciona o ícone de PDF
+            const pdfIcon = document.createElement('img');
+            pdfIcon.alt = 'PDF';
+            pdfIcon.classList.add('preview-pdf-icon');
+            fileContainer.appendChild(pdfIcon);
+            
+            // Adiciona o nome do arquivo
+            const fileName = document.createElement('div');
+            fileName.textContent = file.name;
+            fileContainer.appendChild(fileName);
+            
+            // Adiciona o contêiner do arquivo à área de pré-visualização
+            uploadArea.appendChild(fileContainer);
+        }
+    }
 });
 
 // Configura o evento de clique para o botão de insights inicial

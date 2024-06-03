@@ -75,14 +75,28 @@ body{
     max-width: 100%;
     height: 17.675vh;
     background-color: #fff;
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    border: 5px solid #FF6F61; 
+    border: 5px solid #FF6F61;
     border-radius: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-height: 17.675vh;
+    scrollbar-width: thin; /* Torna a barra de rolagem mais fina */
+    scrollbar-color: #ffffff transparent; /* Cor da barra e do fundo (branco) */
+}
+
+/* Estilizando a barra de rolagem */
+#service #content #left #send #input #box::-webkit-scrollbar {
+    width: 3px; /* Largura da barra de rolagem */
+}
+
+#service #content #left #send #input #box::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Cor do "botão" da barra de rolagem (branco) */
+    border-radius: 3px; /* Arredondamento do "botão" */
 }
 
 #service #content #left #send #input #box img{
@@ -99,6 +113,16 @@ body{
 
     cursor: pointer;
     filter: blur(1.5px);
+}
+
+.preview-pdf-icon img {
+    width: 16px;
+}
+
+.preview-pdf-icon{
+    display: flex;
+    flex-direction: row;
+    color:#FF6F61;
 }
 
 #service #content #left #send #input #info{
@@ -257,6 +281,10 @@ body{
     background-image: url("./img/response-content.svg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#service #content #right #response #content #text{
+    display: none;
 }
 
 .hidden-loader{

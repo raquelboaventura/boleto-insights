@@ -85,11 +85,11 @@ convo.send_message("Você é uma assistente virtual para ajudar as pessoas a con
                    )
 
 
-def markdown_para_texto(markdown_text):
-    html = mistune.markdown(markdown_text)
-    # Use BeautifulSoup to remove HTML tags and get text
-    soup = BeautifulSoup(html, 'html.parser')
-    return soup.get_text()
+#def markdown_para_texto(markdown_text):
+#    html = mistune.markdown(markdown_text)
+#    # Use BeautifulSoup to remove HTML tags and get text
+#    soup = BeautifulSoup(html, 'html.parser')
+#    return soup.get_text()
 
 
 def get_last_text(data):

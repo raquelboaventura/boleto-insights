@@ -9,16 +9,18 @@ from utilities.configs import get_logger
 
 logger = get_logger()
 
+FILES_PATH = os.path.abspath("..\src\input")
+
 def directory_cleaner():
       # Lista todos os arquivos no diretório
-    arquivos = glob.glob(os.path.abspath("..\src\input"))
+    arquivos = glob.glob(FILES_PATH)
     # Remove cada arquivo
     for arquivo in arquivos:
         try:
             os.remove(arquivo)
-            print(f'Arquivo {arquivo} removido com sucesso.')
+            logger.info(f'Arquivo {arquivo} removido com sucesso.')
         except Exception as e:
-            print(f'Erro ao remover o arquivo {arquivo}: {e}')
+            logger.error(f'Erro ao remover o arquivo {arquivo}: {e}')
 
 def transforma_em_float(dados):
     for i, linha in enumerate(dados):
@@ -37,7 +39,7 @@ def exclui_strings(lista):
 
 
 async def criar_tabelas():
-    pdf_dir = os.path.abspath("..\src\input")
+    pdf_dir = FILES_PATH
     logger.debug(f"Diretório PDF: {pdf_dir}")
 
     if not os.path.exists(pdf_dir):
@@ -69,7 +71,7 @@ async def criar_tabelas():
 
 async def processar_documento(doc):
     logger.info(f"Iniciando o processamento do documento: {doc}")
-    pdf_dir = os.path.abspath("..\src\input")
+    pdf_dir = FILES_PATH
     doc_path = os.path.join(pdf_dir, doc)
     logger.debug(f"Tentando abrir o documento: {doc_path}")
 

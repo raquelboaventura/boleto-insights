@@ -199,14 +199,6 @@
         "documentation": {}
     },
     {
-        "label": "markdown_para_texto",
-        "importPath": "utilities.chat_ia",
-        "description": "utilities.chat_ia",
-        "isExtraImport": true,
-        "detail": "utilities.chat_ia",
-        "documentation": {}
-    },
-    {
         "label": "get_logger",
         "importPath": "utilities.configs",
         "description": "utilities.configs",
@@ -216,6 +208,14 @@
     },
     {
         "label": "criar_tabelas",
+        "importPath": "utilities.pdf",
+        "description": "utilities.pdf",
+        "isExtraImport": true,
+        "detail": "utilities.pdf",
+        "documentation": {}
+    },
+    {
+        "label": "directory_cleaner",
         "importPath": "utilities.pdf",
         "description": "utilities.pdf",
         "isExtraImport": true,
@@ -588,15 +588,6 @@
         "documentation": {}
     },
     {
-        "label": "markdown_para_texto",
-        "kind": 2,
-        "importPath": "src.utilities.chat_ia",
-        "description": "src.utilities.chat_ia",
-        "peekOfCode": "def markdown_para_texto(markdown_text):\n    html = mistune.markdown(markdown_text)\n    # Use BeautifulSoup to remove HTML tags and get text\n    soup = BeautifulSoup(html, 'html.parser')\n    return soup.get_text()\ndef get_last_text(data):\n    try:\n        logger.debug(f\"Data received in get_last_text: {data}\")\n        texts = re.findall(r'text: \"(.*?)\"', data)\n        logger.debug(f\"Extracted texts: {texts}\")",
-        "detail": "src.utilities.chat_ia",
-        "documentation": {}
-    },
-    {
         "label": "get_last_text",
         "kind": 2,
         "importPath": "src.utilities.chat_ia",
@@ -678,6 +669,15 @@
         "documentation": {}
     },
     {
+        "label": "directory_cleaner",
+        "kind": 2,
+        "importPath": "src.utilities.pdf",
+        "description": "src.utilities.pdf",
+        "peekOfCode": "def directory_cleaner():\n      # Lista todos os arquivos no diretório\n    arquivos = glob.glob(FILES_PATH)\n    # Remove cada arquivo\n    for arquivo in arquivos:\n        try:\n            os.remove(arquivo)\n            logger.info(f'Arquivo {arquivo} removido com sucesso.')\n        except Exception as e:\n            logger.error(f'Erro ao remover o arquivo {arquivo}: {e}')",
+        "detail": "src.utilities.pdf",
+        "documentation": {}
+    },
+    {
         "label": "transforma_em_float",
         "kind": 2,
         "importPath": "src.utilities.pdf",
@@ -691,7 +691,7 @@
         "kind": 2,
         "importPath": "src.utilities.pdf",
         "description": "src.utilities.pdf",
-        "peekOfCode": "def exclui_strings(lista):\n    strings_desejadas = ['pagamento', 'saldo em rotativo']\n    for string in strings_desejadas:\n        for item in lista[:]:  # Usamos lista[:] para criar uma cópia da lista original\n            if string in item:\n                lista.remove(item)\n    return lista\nasync def criar_tabelas():\n    pdf_dir = os.path.abspath(\"..\\src\\input\")\n    logger.debug(f\"Diretório PDF: {pdf_dir}\")",
+        "peekOfCode": "def exclui_strings(lista):\n    strings_desejadas = ['pagamento', 'saldo em rotativo']\n    for string in strings_desejadas:\n        for item in lista[:]:  # Usamos lista[:] para criar uma cópia da lista original\n            if string in item:\n                lista.remove(item)\n    return lista\nasync def criar_tabelas():\n    pdf_dir = FILES_PATH\n    logger.debug(f\"Diretório PDF: {pdf_dir}\")",
         "detail": "src.utilities.pdf",
         "documentation": {}
     },
@@ -700,7 +700,16 @@
         "kind": 5,
         "importPath": "src.utilities.pdf",
         "description": "src.utilities.pdf",
-        "peekOfCode": "logger = get_logger()\ndef transforma_em_float(dados):\n    for i, linha in enumerate(dados):\n        if len(linha) > 3 and linha[3] and linha[3].strip():\n            dados[i][3] = float(linha[3].replace('.', '').replace(',', '.'))\n    return dados\ndef exclui_strings(lista):\n    strings_desejadas = ['pagamento', 'saldo em rotativo']\n    for string in strings_desejadas:\n        for item in lista[:]:  # Usamos lista[:] para criar uma cópia da lista original",
+        "peekOfCode": "logger = get_logger()\nFILES_PATH = os.path.abspath(\"..\\src\\input\")\ndef directory_cleaner():\n      # Lista todos os arquivos no diretório\n    arquivos = glob.glob(FILES_PATH)\n    # Remove cada arquivo\n    for arquivo in arquivos:\n        try:\n            os.remove(arquivo)\n            logger.info(f'Arquivo {arquivo} removido com sucesso.')",
+        "detail": "src.utilities.pdf",
+        "documentation": {}
+    },
+    {
+        "label": "FILES_PATH",
+        "kind": 5,
+        "importPath": "src.utilities.pdf",
+        "description": "src.utilities.pdf",
+        "peekOfCode": "FILES_PATH = os.path.abspath(\"..\\src\\input\")\ndef directory_cleaner():\n      # Lista todos os arquivos no diretório\n    arquivos = glob.glob(FILES_PATH)\n    # Remove cada arquivo\n    for arquivo in arquivos:\n        try:\n            os.remove(arquivo)\n            logger.info(f'Arquivo {arquivo} removido com sucesso.')\n        except Exception as e:",
         "detail": "src.utilities.pdf",
         "documentation": {}
     },
