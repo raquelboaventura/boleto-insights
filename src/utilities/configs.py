@@ -2,7 +2,6 @@ from loguru import logger
 import sys
 from datetime import datetime
 
-
 current_date = datetime.now().strftime("%Y-%m-%d")
 # Configurações do logger
 logger.remove()  # Remove qualquer configuração de log padrão

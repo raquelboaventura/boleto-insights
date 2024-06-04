@@ -1,4 +1,4 @@
-from utilities.pdf import criar_tabelas, directory_cleaner
+from utilities.pdf import criar_tabelas, directory_cleaner, markdown_to_html
 from loguru import logger
 from quart import Quart, jsonify, request, render_template
 import os
@@ -20,11 +20,11 @@ async def insights():
         if insights_result is None:
             raise TypeError("insights_result é None")
         full_message = "\n\n".join(insights_result)
-        #full_message = markdown_para_texto(full_message)
+        full_message = markdown_to_html(full_message)
         logger.info(f"full_message: {full_message}")
         # Chama o método para limpar o diretório
         logger.info("Limpando o diretório")
-        directory_cleaner()
+        #directory_cleaner()
         return jsonify({"message": full_message, "status_code": 200}), 200
     except TypeError as e:
         logger.error(f"Erro de tipo: {e}")

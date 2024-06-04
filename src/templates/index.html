@@ -93,26 +93,6 @@ DADOS DOS USUÁRIOS</b>.
             </div>
         </div>
     </section>
-       <!-- Importando o script do Marked.js -->
-       <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-       <script>
-           // Função para formatar texto em Markdown para HTML
-           function formatMarkdownToHtml(markdownText) {
-               return marked(markdownText);
-           }
-   
-           // Selecionando o elemento que contém o texto em Markdown
-           let textContent = document.querySelector("#service #content #right #response #content #text");
-           let markdownText = textContent.textContent;
-   
-           // Convertendo o texto em Markdown para HTML
-           let htmlContent = formatMarkdownToHtml(markdownText);
-   
-           // Inserindo o conteúdo HTML no elemento
-           textContent.innerHTML = htmlContent;
-       </script>
-       
-       <script type="module" src="../static/script.js"></script>
+       <script defer src="../static/script.js"></script>
 </body>
 </html>

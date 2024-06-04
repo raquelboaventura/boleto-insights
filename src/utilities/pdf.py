@@ -3,6 +3,7 @@ import os
 import fitz
 import pandas as pd
 import glob
+import markdown
 
 from utilities.chat_ia import chat
 from utilities.configs import get_logger
@@ -10,6 +11,17 @@ from utilities.configs import get_logger
 logger = get_logger()
 
 FILES_PATH = os.path.abspath("..\src\input")
+
+def markdown_to_html(text):
+    try:
+        text = text.replace('\\n', '\n')
+        html = markdown.markdown(text, extensions=['mdx_truly_sane_lists'])
+    except Exception as e:
+        logger.error(e)
+    logger.info("Transformando o texto Markdown em HTML")
+    logger.info(html)
+    return html
+
 
 def directory_cleaner():
       # Lista todos os arquivos no diretório
